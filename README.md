@@ -7,6 +7,8 @@ TopPicks Mod : http://www.techkings.org/openvix-openatv-skins/103009-slyk-skin-m
 
 automatic image downloader for toppicks Mod for slyk-1-hd skin
 
-save the toppicks.sh file in to /usr/share/enigma2/slyk-1-hd/skyicons
+save toppicks.py to any location you like
 
-set a crontimer to run it weekly
+set a crontimer to run it daily (early morning best)
+
+command : /path/to/file/python toppicks.py
