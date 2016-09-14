@@ -1,12 +1,12 @@
 #!/bin/bash
 #Delete existing file if it exists
-rm coming-soon-to-sky-cinema-premiere
+rm source
 
 #Grab the page we want
-wget http://www.sky.com/tv/channel/skycinema/gallery/coming-soon-to-sky-cinema-premiere
+wget http://www.sky.com/tv/channel/skycinema/gallery/coming-soon-to-sky-cinema-premiere source
 
 #Find all the links to the images we want and dump them in to links.txt
-cat coming-soon-to-sky-cinema-premiere | grep -Eo "(http|https)://www.asset1.net/tv/pictures/movie/[a-zA-Z0-9./?=_-]*.jpg" | sort | uniq > links.txt
+cat source | grep -Eo "(http|https)://www.asset1.net/tv/pictures/movie/[a-zA-Z0-9./?=_-]*.jpg" | sort | uniq > links.txt
 sed -i 's/.net/.net.rsz.io/g' links.txt
 
 #Pick random line in links.txt and download it
