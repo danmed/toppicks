@@ -18,3 +18,5 @@ command : /usr/bin/python /path/to/toppicks.py
 This now works as it should.
 
 grantdavey91 will be updating the images periodically.. i'd suggest setting the cron timer daily at some random time in the morning.
+
+TopPicks2.sh is an experimental shell script to auto grab images from a Sky page.. it's not been fully tested and it only replaces 4 of the images as they are the right aspect ratio.
