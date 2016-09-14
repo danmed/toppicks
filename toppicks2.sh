@@ -16,35 +16,35 @@ sed -i 's/.net/.net.rsz.io/g' all.txt
 sed -i 's/.com/.com.rsz.io/g' all.txt
 
 #Pick random line in links.txt and download it
-linenum=$(( ( RANDOM % 70 )  + 1 ))
+linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks1.png
 resize="?w=400&h=240&mode=stretch&format=png"
 wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in links.txt and download it
-linenum=$(( ( RANDOM % 70 )  + 1 ))
+linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks3.png
 resize="?w=183&h=116&mode=stretch&format=png"
 wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in links.txt and download it
-linenum=$(( ( RANDOM % 70 )  + 1 ))
+linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks4.png
 resize="?w=183&h=116&mode=stretch&format=png"
 wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in links.txt and download it
-linenum=$(( ( RANDOM % 70 )  + 1 ))
+linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks6.png
 resize="?w=183&h=116&mode=stretch&format=png"
 wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in links.txt and download it
-linenum=$(( ( RANDOM % 70 )  + 1 ))
+linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=gmanpanthro.png
 resize="?w=183&h=116&mode=stretch&format=png"
