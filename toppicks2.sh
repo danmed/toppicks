@@ -8,7 +8,7 @@ wget https://www.sky.com/watch -O htmlpage2
 
 #Find all the links to the images we want and dump them in to links.txt
 cat htmlpage | grep -Eo "(http|https)://www.asset1.net/tv/pictures/movie/[a-zA-Z0-9./?=_-]*.jpg" | sort | uniq > links.txt
-cat htmlpage | grep -Eo "(http|https):/www.sky.com/assets1/[a-zA-Z0-9./?=_-]*.jpg" | sort | uniq > links2.txt
+cat htmlpage2 | grep -Eo "(http|https):/www.sky.com/assets1/[a-zA-Z0-9./?=_-]*.jpg" | sort | uniq > links2.txt
 
 cat *.txt > all.txt
 
