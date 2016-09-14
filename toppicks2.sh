@@ -1,6 +1,7 @@
 #!/bin/bash
 #Delete existing file if it exists
 rm htmlpage
+rm htmlpage2
 
 #Grab the page we want
 wget http://www.sky.com/tv/channel/skycinema/gallery/coming-soon-to-sky-cinema-premiere -O htmlpage
