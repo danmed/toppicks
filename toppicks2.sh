@@ -1,6 +1,6 @@
 #!/bin/bash
 #Delete existing file if it exists
-#rm coming-soon-to-sky-cinema-premiere
+rm coming-soon-to-sky-cinema-premiere
 
 #Grab the page we want
 wget http://www.sky.com/tv/channel/skycinema/gallery/coming-soon-to-sky-cinema-premiere
