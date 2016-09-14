@@ -8,13 +8,14 @@ wget http://www.sky.com/tv/channel/skycinema/gallery/coming-soon-to-sky-cinema-p
 #Find all the links to the images we want and dump them in to links.txt
 cat htmlpage | grep -Eo "(http|https)://www.asset1.net/tv/pictures/movie/[a-zA-Z0-9./?=_-]*.jpg" | sort | uniq > links.txt
 
-sed -i 's/.net/.net.rsz.io/g' all.txt
+sed -i 's/.net/.net.rsz.io/g' links.txt
 
 #Pick random line in links.txt and download it
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "links.txt")
 name=toppicks1.png
 resize="?w=400&h=240&mode=stretch&format=png"
+echo $link$resize
 wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in links.txt and download it
