@@ -4,10 +4,16 @@ rm htmlpage
 
 #Grab the page we want
 wget http://www.sky.com/tv/channel/skycinema/gallery/coming-soon-to-sky-cinema-premiere -O htmlpage
+wget https://www.sky.com/watch -O htmlpage2
 
 #Find all the links to the images we want and dump them in to links.txt
 cat htmlpage | grep -Eo "(http|https)://www.asset1.net/tv/pictures/movie/[a-zA-Z0-9./?=_-]*.jpg" | sort | uniq > links.txt
-sed -i 's/.net/.net.rsz.io/g' links.txt
+cat htmlpage | grep -Eo "(http|https):/www.sky.com/assets1/[a-zA-Z0-9./?=_-]*.jpg" | sort | uniq > links2.txt
+
+cat *.txt > all.txt
+
+sed -i 's/.net/.net.rsz.io/g' all.txt
+sed -i 's/.com/.com.rsz.io/g' all.txt
 
 #Pick random line in links.txt and download it
 linenum=$(( ( RANDOM % 40 )  + 1 ))
