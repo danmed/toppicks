@@ -3,7 +3,7 @@ Thread : http://www.techkings.org/openvix-openatv-skins/104530-slyk-1-hd-top-pic
 
 Kiddac's Skin : http://www.techkings.org/openvix-openatv-skins/102929-slyk-1-hd-sly-skin-version-5-a.html
 
-TopPicks Mod : http://www.techkings.org/openvix-openatv-skins/103009-slyk-skin-mods-v5-22.html#post589395
+TopPicks Mod : http://www.techkings.org/openvix-openatv-skins/103009-slyk-skin-mods-v5-15.html#post587783
 
 Images : grantdavey91
 
