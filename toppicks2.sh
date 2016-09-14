@@ -12,31 +12,27 @@ sed -i 's/.net/.net.rsz.io/g' links.txt
 #Pick random line in links.txt and download it
 linenum=$(( ( RANDOM % 40 )  + 1 ))
 link=$(sed -n ${linenum}p "links.txt")
-name=toppicks1
-extension=.png
+name=toppicks1.png
 resize="?w=383&h=244&mode=stretch&format=png"
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name$a$extension
+wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name$extension
 
 #Pick random line in links.txt and download it
 linenum=$(( ( RANDOM % 40 )  + 1 ))
 link=$(sed -n ${linenum}p "links.txt")
-name=toppicks3
-extension=.png
+name=toppicks3.png
 resize="?w=183&h=116&mode=stretch&format=png"
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name$a$extension
+wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name$extension
 
 #Pick random line in links.txt and download it
 linenum=$(( ( RANDOM % 40 )  + 1 ))
 link=$(sed -n ${linenum}p "links.txt")
-name=toppicks4
-extension=.png
+name=toppicks4.png
 resize="?w=183&h=116&mode=stretch&format=png"
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name$a$extension
+wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name$extension
 
 #Pick random line in links.txt and download it
 linenum=$(( ( RANDOM % 40 )  + 1 ))
 link=$(sed -n ${linenum}p "links.txt")
-name=toppicks6
-extension=.png
+name=toppicks6.png
 resize="?w=183&h=116&mode=stretch&format=png"
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name$a$extension
+wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name$extension
