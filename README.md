@@ -19,4 +19,4 @@ This now works as it should.
 
 grantdavey91 will be updating the images periodically.. i'd suggest setting the cron timer daily at some random time in the morning.
 
-TopPicks2.sh is an experimental shell script to auto grab images from a Sky page.. it's not been fully tested and it only replaces 4 of the images as they are the right aspect ratio.
+TopPicks2.sh is an automatic downloader from 3 different sources.. it's not perfect as it doesn't have the sky channel logs on some of the images, but it does mean you get fresh images each day (or each time you run it). It is standalone and does not require any other files from this repo to run.
