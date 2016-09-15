@@ -1,4 +1,5 @@
 #!/bin/bash
+username=toppicks
 #Delete existing file if it exists
 rm htmlpage
 rm htmlpage2
