@@ -32,7 +32,7 @@ sed -i 's/?downsize=320//g' all.txt
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks1.png
-resize="?w=400&h=240&mode=stretch&format=png"
+resize="?w=400&h=240&mode=crop&format=png"
 echo $link$resize
 wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
 
@@ -40,7 +40,7 @@ wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="M
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks3.png
-resize="?w=183&h=116&mode=stretch&format=png"
+resize="?w=183&h=116&mode=crop&format=png"
 echo $link$resize
 wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
 
@@ -48,7 +48,7 @@ wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="M
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks4.png
-resize="?w=183&h=116&mode=stretch&format=png"
+resize="?w=183&h=116&mode=crop&format=png"
 echo $link$resize
 wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
 
@@ -56,7 +56,7 @@ wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="M
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks6.png
-resize="?w=183&h=116&mode=stretch&format=png"
+resize="?w=183&h=116&mode=crop&format=png"
 echo $link$resize
 wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
 
@@ -64,26 +64,9 @@ wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="M
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=gmanpanthro.png
-resize="?w=183&h=116&mode=stretch&format=png"
+resize="?w=183&h=116&mode=crop&format=png"
 echo $link$resize
 wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
-
-#Pick random line in movies.txt and download it
-linenum=$(( ( RANDOM % 5 )  + 1 ))
-link=$(sed -n ${linenum}p "movies.txt")
-name=toppicks2.png
-resize="?w=200&h=240&mode=stretch&format=png"
-echo $link$resize
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
-
-#Pick random line in movies.txt and download it
-linenum=$(( ( RANDOM % 5 )  + 1 ))
-link=$(sed -n ${linenum}p "movies.txt")
-name=toppicks5.png
-resize="?w=200&h=240&mode=stretch&format=png"
-echo $link$resize
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
-
 
 #Pick random line in movies.txt and download it
 linenum=$(( ( RANDOM % 5 )  + 1 ))
