@@ -22,7 +22,7 @@ cat htmlpage3 | grep -Eo "(http|https)://www.asset1.net/tv/pictures/movie/[a-zA-
 cat *.txt > all.txt
 
 sed -i 's/.net/.net.rsz.io/g' all.txt
-sed -i 's/.net/.net.rsz.io/g' movies.txt
+#sed -i 's/.net/.net.rsz.io/g' movies.txt
 sed -i 's/.com/.com.rsz.io/g' all.txt
 sed -i 's/?downsize=320//g' all.txt
 
@@ -30,54 +30,54 @@ sed -i 's/?downsize=320//g' all.txt
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks1.png
-resize="?w=400&h=240&mode=stretch&format=png"
-echo $link$resize
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
+url1=http://res.cloudinary.com/toppicks/image/fetch/w_400,h_240,f_png/
+echo $url1$link
+wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in all.txt and download it
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks3.png
-resize="?w=183&h=116&mode=stretch&format=png"
-echo $link$resize
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
+url1=http://res.cloudinary.com/toppicks/image/fetch/w_183,h_116,f_png/
+echo $url1$link
+wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in all.txt and download it
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks4.png
-resize="?w=183&h=116&mode=stretch&format=png"
-echo $link$resize
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
+url1=http://res.cloudinary.com/toppicks/image/fetch/w_183,h_116,f_png/
+echo $url1$link
+wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in all.txt and download it
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks6.png
-resize="?w=183&h=116&mode=stretch&format=png"
-echo $link$resize
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
+url1=http://res.cloudinary.com/toppicks/image/fetch/w_183,h_116,f_png/
+echo $url1$link
+wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in all.txt and download it
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=gmanpanthro.png
-resize="?w=183&h=116&mode=stretch&format=png"
-echo $link$resize
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
+url1=http://res.cloudinary.com/toppicks/image/fetch/w_183,h_116,f_png/
+echo $url1$link
+wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in movies.txt and download it
 linenum=$(( ( RANDOM % 5 )  + 1 ))
 link=$(sed -n ${linenum}p "movies.txt")
 name=toppicks2.png
-resize="?w=200&h=240&mode=stretch&format=png"
-echo $link$resize
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
+url1=http://res.cloudinary.com/toppicks/image/fetch/w_200,h_240,f_png/l_cinema,g_south_west,c_scale,w_74/
+echo $url1$link
+wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in movies.txt and download it
 linenum=$(( ( RANDOM % 5 )  + 1 ))
 link=$(sed -n ${linenum}p "movies.txt")
 name=toppicks5.png
-resize="?w=200&h=240&mode=stretch&format=png"
-echo $link$resize
-wget $link$resize -O /usr/share/enigma2/slyk-1-hd/skyicons/$name --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
+url1=http://res.cloudinary.com/toppicks/image/fetch/w_200,h_240,f_png/l_cinema,g_south_west,c_scale,w_74/
+echo $url1$link
+wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
