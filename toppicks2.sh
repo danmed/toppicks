@@ -1,4 +1,6 @@
 #!/bin/bash
+# IF YOU USE THIS, PLEASE USE YOUR OWN FREE CLOUDINARY.COM ACCOUNT AND REPLACE THE BELOW WITH YOUR USERNAME
+username=toppicks
 #Delete existing file if it exists
 rm htmlpage
 rm htmlpage2
@@ -30,54 +32,61 @@ sed -i 's/?downsize=320//g' all.txt
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks1.png
-url1=http://res.cloudinary.com/toppicks/image/fetch/w_400,h_240,f_png/
-echo $url1$link
-wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
+url1=http://res.cloudinary.com/
+url2=/image/fetch/w_400,h_240,f_png/
+echo $url1$username$url2$link
+wget $url1$username$url2$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in all.txt and download it
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks3.png
-url1=http://res.cloudinary.com/toppicks/image/fetch/w_183,h_116,f_png/
-echo $url1$link
-wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
+url1=http://res.cloudinary.com/
+url2=/image/fetch/w_183,h_116,f_png/
+echo $url1$username$url2$link
+wget $url1$username$url2$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in all.txt and download it
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks4.png
-url1=http://res.cloudinary.com/toppicks/image/fetch/w_183,h_116,f_png/
-echo $url1$link
-wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
+url1=http://res.cloudinary.com/
+url2=/image/fetch/w_183,h_116,f_png/
+echo $url1$username$url2$link
+wget $url1$username$url2$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in all.txt and download it
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=toppicks6.png
-url1=http://res.cloudinary.com/toppicks/image/fetch/w_183,h_116,f_png/
-echo $url1$link
-wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
+url1=http://res.cloudinary.com/
+url2=/image/fetch/w_183,h_116,f_png/
+echo $url1$username$url2$link
+wget $url1$username$url2$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in all.txt and download it
 linenum=$(( ( RANDOM % 50 )  + 1 ))
 link=$(sed -n ${linenum}p "all.txt")
 name=gmanpanthro.png
-url1=http://res.cloudinary.com/toppicks/image/fetch/w_183,h_116,f_png/
-echo $url1$link
-wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
+url1=http://res.cloudinary.com/
+url2=/image/fetch/w_183,h_116,f_png/
+echo $url1$username$url2$link
+wget $url1$username$url2$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in movies.txt and download it
 linenum=$(( ( RANDOM % 5 )  + 1 ))
 link=$(sed -n ${linenum}p "movies.txt")
 name=toppicks2.png
-url1=http://res.cloudinary.com/toppicks/image/fetch/w_200,h_240,f_png/l_cinema,g_south_west,c_scale,w_74/
-echo $url1$link
-wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
+url1=http://res.cloudinary.com/
+url2=/image/fetch/w_200,h_240,f_png/l_cinema,g_south_west,c_scale,w_74/
+echo $url1$username$url2$link
+wget $url1$username$url2$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
 
 #Pick random line in movies.txt and download it
 linenum=$(( ( RANDOM % 5 )  + 1 ))
 link=$(sed -n ${linenum}p "movies.txt")
 name=toppicks5.png
-url1=http://res.cloudinary.com/toppicks/image/fetch/w_200,h_240,f_png/l_cinema,g_south_west,c_scale,w_74/
-echo $url1$link
-wget $url1$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
+url1=http://res.cloudinary.com/
+url2=/image/fetch/w_200,h_240,f_png/l_cinema,g_south_west,c_scale,w_74/
+echo $url1$username$url2$link
+wget $url1$username$url2$link -O /usr/share/enigma2/slyk-1-hd/skyicons/$name
