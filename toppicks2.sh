@@ -21,9 +21,9 @@ cat htmlpage3 | grep -Eo "(http|https)://www.asset1.net/tv/pictures/movie/[a-zA-
 
 cat *.txt > all.txt
 
-sed -i 's/.net/.net.rsz.io/g' all.txt
+#sed -i 's/.net/.net.rsz.io/g' all.txt
 #sed -i 's/.net/.net.rsz.io/g' movies.txt
-sed -i 's/.com/.com.rsz.io/g' all.txt
+#sed -i 's/.com/.com.rsz.io/g' all.txt
 sed -i 's/?downsize=320//g' all.txt
 
 #Pick random line in all.txt and download it
