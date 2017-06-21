@@ -1,3 +1,5 @@
+# THIS IS NOW DEPRECATED AS IT HAS BEEN BUILT IN TO WOOSHBUILD
+
 # toppicks
 Thread : http://www.techkings.org/openvix-openatv-skins/104530-slyk-1-hd-top-picks-todays-picks-mod.html
 
